@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="all">
+
+    <div class="history">
+        <div class="heading" id="flip"><h1>History</h1></div>
+        <div class="pi" id="panel"><p id="rest"></p></div>
+    </div>
+
+    <div class="whole">
+        <div class="input">        
+            <input type="text" id="IQ"  autofocus , placeholder="0">
+        </div>   
+    
+    
+        <div class="list">
+            <table class="table">
+                <tr>
+                    <td><button type="button" onclick="zero(), historyzero('clear'), history('clear')" class="button">C</button></td>
+                    <td><button type="button" onclick="minus(), history('minus')" class="button">←</button></td>
+                    <td><button type="button" onclick="math('.'), history('.')" class="button">.</button></td>
+                    <td><button type="button" onclick="math('*'), history('*')" class="button">X</button></td>
+                    <td><button type="button" onclick="math('%'), history('%')" class="button">%</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="math(7), history(7)" class="button">7</button></td>
+                    <td><button type="button" onclick="math(8), history(8)" class="button">8</button></td>
+                    <td><button type="button" onclick="math(9), history(9)" class="button">9</button></td>
+                    <td><button type="button" onclick="math('/'), history('/')" class="button">/</button></td>
+                    <td><button type="button" onclick="math('!'), history('!')" class="button">!</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="math(4), history(4)" class="button">4</button></td>
+                    <td><button type="button" onclick="math(5), history(5)" class="button">5</button></td>
+                    <td><button type="button" onclick="math(6), history(6)" class="button">6</button></td>
+                    <td><button type="button" onclick="math('-'), history('-')" class="button">-</button></td>
+                    <td><button type="button" onclick="math('^'), history('^')" class="button">^</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="math(1), history(1)" class="button">1</button></td>
+                    <td><button type="button" onclick="math(2), history(2)" class="button">2</button></td>
+                    <td><button type="button" onclick="math(3), history(3)" class="button">3</button></td>
+                    <td><button type="button" onclick="math('+'), history('+')" class="button">+</button></td>
+                    <td><button type="button" onclick="math('√'), history('fesvi')" class="button">√</button></td>
+                </tr>
+                <tr>
+                    <td colspan="1"><button type="button" onclick="math('0'), history(0)" class="button">0</button></td>
+                    <td><button type="button" onclick="math('('), history('(')" class="button">(</button></td>
+                    <td><button type="button" onclick="math(')'), history(')')" class="button">)</button></td>
+                    <td><button type="button" onclick="operation(),history('=') " style="width: 200%" class="button">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="index.js"></script>
+<script src="his.js"></script>
+
+</html>
